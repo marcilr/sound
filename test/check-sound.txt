@@ -1,0 +1,33 @@
+check-sound.txt
+Created Mon 29 Jun 2020 05:22:50 PM AKDT
+Copyright (C) 2020 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Check sound on Compulab fitlet2
+
+
+$ inxi -SMA
+System:
+  Host: malachite Kernel: 4.19.0-9-amd64 x86_64 bits: 64 
+  Desktop: Xfce 4.12.4 Distro: Debian GNU/Linux 10 (buster) 
+Machine:
+  Type: Desktop Mobo: Compulab model: fitlet2 v: 1.2 serial: <root required> 
+  UEFI: American Megatrends v: FLT2.0.46.01.00 date: 09/17/2018 
+Audio:
+  Device-1: Intel Atom/Celeron/Pentium Processor N4200/N3350/E3900 Series 
+  Audio Cluster 
+  driver: snd_hda_intel 
+  Device-2: Logitech Webcam C310 type: USB driver: snd-usb-audio,uvcvideo 
+  Sound Server: ALSA v: k4.19.0-9-amd64 
+$ 
+
+Links
+=====
+Various methods to fix no audio in Ubuntu
+Install inxi tool first:
+sudo apt install inxi
+Now check the system, machine and audio information with this command:
+$ inxi -SMA
+...
+$
+https://itsfoss.com/fix-sound-ubuntu-1304-quick-tip/
